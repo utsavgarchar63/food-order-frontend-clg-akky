@@ -1,0 +1,190 @@
+.reservation-page-live-bg {
+  position: relative;
+  min-height: 100vh;
+  color: #bfa56a;
+  font-family: 'Great Vibes', cursive, 'Montserrat', sans-serif;
+  display: flex;
+  background-color: #0f0f0f;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+ 
+  
+}
+
+
+.reservation-page-live-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/src/images/dinner-1433494_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+  opacity: 0.3;
+  z-index: -1;
+}
+/* Overlay stays same */
+.popup-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7); /* darker for luxury */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup box styled to match reservation theme */
+.popup-box {
+  background: #1a1a1a; /* dark background */
+  padding: 30px 40px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0px 6px 25px rgba(0,0,0,0.6);
+  max-width: 400px;
+  width: 90%;
+  font-family: 'Courier New', Courier, monospace;
+  animation: popupFade 0.3s ease-out;
+  position: relative;
+  border: 1px solid rgba(191,165,106,0.4); /* subtle gold border */
+  color: #bfa56a; /* gold text */
+  backdrop-filter: blur(6px);   /* <-- blur effect */
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Headings inside popup */
+.popup-box h2 {
+  margin-bottom: 12px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #bfa56a; /* gold accent */
+  font-family: 'Great Vibes', cursive, 'Montserrat', sans-serif;
+}
+
+/* Paragraphs (details) */
+.popup-box p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #e0e0e0; /* light gray for readability */
+}
+
+/* Buttons styled in theme */
+.popup-box button {
+  margin-top: 18px;
+  background: linear-gradient(135deg, #bfa56a, #8c7740);
+  color: #0f0f0f;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+.popup-box button:hover {
+  background: linear-gradient(135deg, #d8c58a, #a68b47);
+  transform: scale(1.05);
+}
+
+/* Success/Error indicator (subtle) */
+.popup-box.success {
+  box-shadow: 0px 0px 15px rgba(191,165,106,0.8);
+}
+.popup-box.error {
+  box-shadow: 0px 0px 15px rgba(220,53,69,0.7);
+}
+
+/* Animation */
+@keyframes popupFade {
+  from { transform: scale(0.85); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+
+
+
+
+
+
+
+.reservation-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  font-family: monospace;
+  position: relative;
+  z-index: 2;
+}
+
+.reservation-header p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-family:monospace;
+  margin-bottom: 0.25rem;
+  position: relative;
+  z-index: 2;
+}
+
+.reservation-container-dark-bg {
+  background: rgba(30, 30, 30, 0.85);
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  width: 320px;
+  box-shadow: 0 0 15px rgba(191, 165, 106, 0.5);
+  margin-top: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.reservation-form-dark-bg {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.reservation-form-dark-bg input,
+.reservation-form-dark-bg select {
+  background: linear-gradient(180deg, #ffffff 0%, #d3d3d3 100%);
+  border: none;
+  border-radius: 30px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: #333;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease;
+}
+
+.reservation-form-dark-bg input:focus,
+.reservation-form-dark-bg select:focus {
+  outline: none;
+  background: linear-gradient(180deg, #f0e6c8 0%, #d3c88a 100%);
+}
+
+.submit-button-dark-bg {
+  background-color: #bfa56a;
+  border: none;
+  border-radius: 30px;
+  padding: 0.75rem 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f0f0f;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  z-index: 2;
+}

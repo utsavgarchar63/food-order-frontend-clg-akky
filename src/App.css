@@ -1,0 +1,37 @@
+/* App.css - global styles */
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Links default style */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Optional global button style */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Scrollbar example */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 3px;
+}
+
+.yup-error {
+  color: red;
+  margin: 0px;
+}

@@ -1,0 +1,144 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #121212;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-container {
+  display: flex;
+  height: 100vh;
+  background-color: #121212;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0; /* Remove white space */
+  padding: 0; /* Remove white space */
+}
+
+.menu-sidebar {
+  width: 280px;
+  background-color: #1e1e1e;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.7);
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.restaurant-info h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.restaurant-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.restaurant-info p {
+  font-size: 0.9rem;
+  margin: 3px 0;
+  color: #ccc;
+}
+
+.category-nav {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.category-button {
+  background-color: #2a2a2a;
+  border: none;
+  padding: 12px 15px;
+  color: #ccc;
+  font-size: 1rem;
+  text-align: left;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-button:hover,
+.category-button.active {
+  background-color: #f5c518;
+  color: #121212;
+  font-weight: bold;
+}
+
+.menu-main {
+  flex-grow: 1;
+  padding: 30px 40px;
+  overflow-y: auto;
+}
+
+.menu-main h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  color: #f5c518;
+  font-weight: 700;
+}
+
+.category-description {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.menu-item {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.menu-item-details {
+  padding: 15px 20px;
+}
+
+.menu-item-details h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.menu-item-details p {
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.3;
+}
+
+.rating {
+  display: flex;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #f5c518;
+  font-weight: 600;
+}
